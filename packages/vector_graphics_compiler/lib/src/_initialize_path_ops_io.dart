@@ -24,7 +24,7 @@ bool initializePathOpsFromFlutterCache() {
   if (Platform.isWindows) {
     if (Abi.current() == Abi.windowsX64) {
       platform = 'windows-x64';
-    } else if (Abi.current() == Abi.windowsIA32) {
+    } else if (Abi.current() == Abi.windowsArm64) {
       platform = 'windows-arm64';
     } else {
       throw Exception('Unsupported ABI: ${Abi.current()}');
